@@ -1,0 +1,10 @@
+*                text=auto
+
+.js              text eol=lf
+.json            text eol=lf
+.ts              text eol=lf
+.yml             text eol=lf
+
+Dockerfile       text eol=lf
+
+README           text eol=lf

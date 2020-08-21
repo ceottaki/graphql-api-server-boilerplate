@@ -14,7 +14,7 @@ To use this repository as a base for a new repository, and to get it up and runn
 4. Initiate git with your new repository in mind
 5. Add your first commit
 6. Install npm packages
-7. Run the project and/or build the site
+7. Run the project and/or build the app
 
 ### Cloning this repository and removing history
 
@@ -65,7 +65,7 @@ cd app
 npm install
 ```
 
-### Running the project and building the site
+### Running the project and building the app
 
 To run the project, from the app folder inside of the root folder of your application, you can one of the following commands:
 
@@ -88,7 +88,7 @@ The app has its configuration files in its root folder, but the actual applicati
 Looking inside the `src` folder, you will see:
 
 - `types`: this is where TypeScript interfaces that represent types that can be used by the entire application should sit.
-- `weather`: this includes an example query field collection that allows weather data to be queried through GraphQL, using [ClimaCell](https://www.climacell.co/)'s free API. This is also used to demonstrate how to pass secret values to the query field collections as the API needs a key, which can be passed to the application through environment variables or as a [Docker secret](https://docs.docker.com/engine/swarm/secrets/), if the application is deployed with Docker. More on this below
+- `weather`: this includes an example query field collection that allows weather data to be queried through GraphQL, using [ClimaCell](https://www.climacell.co/)'s free API. This is also used to demonstrate how to pass secret values to the query field collections as the API needs a key, which can be passed to the application through environment variables or as a [Docker secret](https://docs.docker.com/engine/swarm/secrets/), if the application is deployed with Docker. More on this [below](#configuring-the-example)
 - `app.ts`: this is the class that represents the application itself, where the restify server is initialised and where the Apollo Server is configured. It is also used to add query field collections to the Apollo Server configuration
 - `main.ts`: this is the entry point of the application and it is where the configuration is read and the app initialised
 - `utils.ts`: this is a class of static utility functions that may be used throughout the app. It includes the function that is used to read configuration (`readSecret`) which can be altered if you decide not to use Docker secrets or environment variables.

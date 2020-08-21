@@ -9,7 +9,9 @@
       "port": 9339,
       "skipFiles": ["<node_internals>/**"],
       "cwd": "${workspaceFolder}/app",
-      "env": {}
+      "env": {
+        // "weatherApiToken": "GET YOUR API KEY AT https://developer.climacell.co/"
+      }
     }
   ]
 }
